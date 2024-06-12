@@ -1,0 +1,102 @@
+@media screen and (max-width: 412px) {
+    
+    header{
+        background-image: url(../Image/main-image.png);
+        height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+.hamber-menu{
+    display: block;
+}
+.header-nav{
+    display: none;
+}
+.ham{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-right: 20px;
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+}
+.left-header{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.info-box{
+    height: 50%;
+    max-height: 70px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    gap: 10px;
+    bottom: 10px;
+    padding:10px 20px;
+}
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.list-film{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+    overflow-x: scroll;
+        overflow-y: hidden;
+}
+.news{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px -20px 53px;
+}
+.best-film{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 20px;
+}
+.bargo{
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 20px -35px 55px;
+}
+.top-footerdiv{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 15px 20px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+}
+.center-footerdiv{
+    margin: 0px 20px;
+}
+.last-footerdiv{
+    margin: 0px 22px;
+}
+
+}

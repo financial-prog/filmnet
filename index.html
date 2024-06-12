@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmnet</title>
+    <link rel="stylesheet" href="CSS-Style/reset.css">
+    <link rel="stylesheet" href="CSS-Style/style.css">
+    <link rel="stylesheet" href="CSS-Style/mobile.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <div class="navbar">
+            <div class="right-header">
+                <div class="ham">
+                    <div><img class="hamber-menu" src="Image/hamber-menu.png"></div>
+                    <div></div><a href="#"><img src="Image/logo-filmnet.png"></a></div> 
+                </div>
+                <div>
+                    <nav class="header-nav">
+                        <a href="#">فیلم</a>
+                        <a href="#">سریال</a>
+                        <a href="#">دسته بندی</a>
+                        <a href="#">کودک و نوجوان</a>
+                        <a href="#">ایرانی</a>
+                        <a href="#">سینما آنلاین</a>
+                        <a href="imdb.html">IMDB</a>
+                    </nav>
+                </div>
+            </div></div>
+            <div>
+                <div class="left-header">
+                    <div>
+                     <a href="#"><img src="Image/magnifying-glass.png" alt="magnifying-glass"></a>
+                    </div>
+                     <div>
+                     <button class="btn-sub btn">
+                        <span>خرید اشتراک</span>
+                     </button>
+                    </div>
+                    <div>
+                     <button class="btn-login btn">
+                        <span>ورود</span>
+                     </button>
+                    </div>
+                </div>
+            </div>
+        </menu>
+        <div class="info-box">
+            <img src="./Image/logo-pedarkhandeh.png" alt="" width="75%" height="75%">
+            <div class="timer-box">
+                  <div class="timer">
+                    <p id="demo"></p>
+                      <script>
+                       var countDownDate = new Date("september 15, 2024 15:37:25").getTime();
+                       var x = setInterval(function() {
+                       var now = new Date().getTime();
+                       var distance = countDownDate - now;
+                       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                       document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                       + minutes + "m " + seconds + "s "; 
+                       if (distance < 0) {
+                       clearInterval(x);
+                       document.getElementById("demo").innerHTML = "EXPIRED";
+                             }
+                           }, 1000);
+                       </script>
+                    <!-- <p>30</p>
+                    <span>:</span>
+                    <p>07</p>
+                    <span>:</span>
+                    <p>07</p>
+                    <span>:</span>
+                    <p>00</p> -->
+                  </div>
+                <div>
+                 <button class="btn-info">
+                    <div><span><img src="Image/logo-info.png" alt=""></span></div>
+                    <div><a href="#"><span>اطلاعات بیشتر</span></a></div>
+                 </button>
+                </div>
+        </div>
+    </header>
+    <!-- ----------end of header---------- -->
+    <main>
+        <div class="films" width="100%">
+            <div class="news" width="100%">
+                <div><a href="#"><h3>تازه های فیلمنت</h3></a></div>
+            <div><img src="Image/left-news.png" width="50%" height="50%"></div>
+            </div>
+            <div class="list-film">
+            <div class="img-text">
+                <img class="img-list" src="Image/angels.png" alt="angels">
+                <div><h6>فرشته های معمولی</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/preheated.png" alt="preheated">
+                <div><h6>از قبل گمشده</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/monkey-man.png" alt="monkeyman">
+                <div><h6>مرد میمونی</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/aftermath.png" alt="aftermath">
+                <div><h6>پس از حادثه</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/problemista.png" alt="problemista">
+                <div><h6>دردسر ساز</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/babylon.png" alt="babylon">
+                <div><h6>قصه های بابیلون</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/afwaan.png" alt="afwaan">
+                <div><h6>شایعه</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/king-arthur.png" alt="kingarthur">
+                <div><h6>شاه آرتور</h6></div>
+            </div>
+            </div>
+        </div>
+        <!-- ---picture wrap--- -->
+        <div class="wrap-pic">
+            <img src="Image/wrap-pic.png" width="100%">
+        </div>
+        <!--imdb 250-->
+        
+        <div class="films" width="100%">
+            <div class="news" width="100%">
+                <div><a href="imdb.html">IMDB 250</a></div>
+            <div><img src="Image/left-news.png" width="50%" height="50%"></div>
+            </div>
+            <div class="list-film">
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/tom.jpg" alt="">
+                <div><h6>فارست گامپ   </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/shind.jpg" alt="">
+                <div><h6>فهرست شیندلر  </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/lord.jpg" alt="">
+                <div><h6>ارباب حلقه ها </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/12angry.jpg" alt="">
+                <div><h6>12 مرد خمشگین  </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/godfa2.jpg" alt="godfather2">
+                <div><h6>پدر خوانده2 </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/dark.jpg" alt="dark">
+                <div><h6> شوالیه تاریکی </h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/godfa.jpg" alt="godfather">
+                <div><h6>پدر خوانده</h6></div>
+            </div>
+            <div class="img-text">
+                <img class="img-list" src="Image/imdb/shaw.jpg" alt="">
+                <div><h6> رهایی در شاوشنگ</h6></div>
+            </div>
+            </div>
+        </div>
+        <!-- ---Best Films--- -->
+        <div class="bests">
+            <div class="bargo">
+                <a href="#">برگزیده</a>
+            </div>
+            <div class="best-film">
+            <div>
+                <img class="img-best" src="Image/shab-ahangi.png" alt="shabahangi">
+            </div>
+            <div>
+                <img class="img-best" src="Image/afei-tehran.png" alt="afeitehran">
+            </div>
+            <div>
+                <img class="img-best" src="Image/pedarkhandeh.png" alt="pedarkhandeh">
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- ---main div--- -->
+        <div class="footer">
+            <!-- ---top footer div--- -->
+            <div class="top-footerdiv">
+                <div class="app">
+                    <div><a href="#">دریافت اپلیکشین های فیلمنت</a></div>
+                    <div><img src="Image/device.png" alt="device" width="85%" height="85%"></div>
+                </div>
+                <div class="about">
+                    <div><a href="#">قوانین و مقررات</a></div>
+                    <div><a href="#">درباره فیلمنت</a></div>
+                    <div><a href="#">تماس با ما</a></div>
+                    <div><a href="#">پرسش های متداول</a></div>
+                </div>
+                <div>
+                    <a href="#"><img src="Image/logo-filmnet.png" alt="Filmnet"></a>
+                </div>
+            </div>
+            <!-- ---center footer div--- -->
+            <div class="center-footerdiv">
+                <div class="social-networks">
+                   <div class="sonet"><a href="#"><img src="Image/instagram.png" alt="instagram"></a></div>
+                   <div class="vl"></div>
+                    <div class="sonet"><a href="#"><img src="Image/telegram.png" alt="telegram"></a></div>
+                    <div class="vl"></div>
+                    <div class="sonet"><a href="#"><img src="Image/twiiter.png" alt="twiiter"></a></div>
+                    <div class="vl"></div>
+                    <div class="sonet"><a href="#"><img src="Image/linked-in.png" alt="linked-in"></a></div>
+                </div>
+                <div class="Vector">
+                    <a href="#"><img src="Image/Vector.png" alt="Vector" width="100%" height="100%"></a>
+                </div>
+            </div>
+        <!-- ---horizontal divader--- -->
+        <div class="horizontal">
+            <hr class="solid">
+        </div>
+        <!-- ---last footer div--- -->
+        <div class="last-footerdiv">
+            <div>
+                <img src="Image/neshane_sabt.svg fill.png" alt="neshanesabt">
+            </div>
+            <div>
+                <p>کلیه حقوق مادی و معنوی اپلیکیشن فیلمنت متعلق به شرکت پارس فیلمنت است</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

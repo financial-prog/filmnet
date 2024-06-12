@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 21 - IMDB Top 250</title>
+    <link rel="stylesheet" href="CSS-Style/bootstrap.min.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <menu>
+            <div class="navbar">
+            <div class="right-header">
+                <div class="ham">
+                    <div><img class="hamber-menu" src="Image/hamber-menu.png"></div>
+                    <div></div><a href="#"><img src="Image/logo-filmnet.png"></a></div> 
+                </div>
+                <div>
+                    <nav class="header-nav">
+                        <a href="#">فیلم</a>
+                        <a href="#">سریال</a>
+                        <a href="#">دسته بندی</a>
+                        <a href="#">کودک و نوجوان</a>
+                        <a href="#">ایرانی</a>
+                        <a href="#">سینما آنلاین</a>
+                    </nav>
+                </div>
+            </div></div>
+            <div>
+                <div class="left-header">
+                    <div>
+                     <a href="#"><img src="Image/magnifying-glass.png" alt="magnifying-glass"></a>
+                    </div>
+                     <div>
+                     <button class="btn-sub btn">
+                        <span>خرید اشتراک</span>
+                     </button>
+                    </div>
+                    <div>
+                     <button class="btn-login btn">
+                        <span>ورود</span>
+                     </button>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </header>
+
+    <main>
+
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+
+                <div class="spinner-border m-auto d-block" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+                <div id="moviesList" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                </div>
+
+                <nav class="mt-4" aria-label="Page navigation example">
+                    <ul class="pagination"></ul>
+                </nav>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
